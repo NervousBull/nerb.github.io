@@ -161,9 +161,9 @@ li a:hover	{
 						}
 
    /* Styles for Mobile Devices */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 375px) {
     body {
-      zoom: 0.7; /* Scales down the page */
+      zoom: 0.6; /* Scales down the page */
     }
 
     .container {
