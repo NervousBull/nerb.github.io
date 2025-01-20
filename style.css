@@ -59,7 +59,7 @@ span a	{
 						font-size:10px;
 						}
 span a:hover	{
-						color:#50A2CF;
+						color:#ffffff;
 						text-decoration:none;
 						font-family:Arial;
 						font-size:10px;
@@ -130,10 +130,10 @@ li	{
 						margin:0px 0px 0px 0px; 
 						padding:0px 0px 0px 16px;
 						line-height:16px;
-						color:#2C2C2C;
+						color:#ffffff;
 						}
 li a	{
-						color:#2C2C2C;
+						color:#ffffff;
 						font-size:11px;
 						text-decoration:underline;
 						}
