@@ -163,8 +163,8 @@ li a:hover	{
    /* Styles for Mobile Devices */
   @media only screen and (max-width: 745px) {
     body {
-      zoom: 0.7; /* Scales down the page */
-      transform: scale(0.7); /* Backup for Firefox */
+      zoom: 0.69; /* Scales down the page */
+      transform: scale(0.69); /* Backup for Firefox */
       transform-origin: top left; /* Ensures scaling starts at the top-left corner */
 	    
     }
