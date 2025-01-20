@@ -1,0 +1,170 @@
+body	{
+						margin:0px;
+						padding:0px;
+						background-image: url(images/bgd_main.gif);
+						background-position: left top;
+						background-repeat: repeat;
+						background-color:#708090;
+						}
+
+/* Using a class */
+.table-class tbody {
+    
+	background-color: #EFEFEF;
+	
+}
+
+
+
+td {
+						vertical-align:top;
+						font-size:11px;
+						line-height:14px;
+						font-family:Arial;
+						color:#2C2C2C;
+						}	
+img {
+						border:0;
+						}											
+/*--------------------------------------------------   ul, em, i, form	 ---------------------*/						
+ul {
+						list-style-type:none;
+						margin:0px; 
+						padding:0px; 
+						color:#2C2C2C;
+						}	
+em, i {
+						font-style:normal;
+						}						
+form {
+						padding:0px;
+						margin:0px;
+						}						
+/*----------------------------------------------------   a	 ---------------------*/						
+a	{
+						color:#2C2C2C; 
+						font-size:11px;
+						text-decoration:underline;
+						}
+a:hover	{
+						color:#B2BEB5;
+						font-size:11px;
+						text-decoration:none;
+						}
+/*-----------------------------------------------------  span a	 ---------------------	*/						 
+span a	{
+						color:#50A2CF;
+						text-decoration:underline;
+						font-family:Arial;
+						font-size:10px;
+						}
+span a:hover	{
+						color:#50A2CF;
+						text-decoration:none;
+						font-family:Arial;
+						font-size:10px;
+						}
+strong {
+						color:#6C6C6C;}
+strong a	{
+						color:#696969;
+						text-decoration:none;
+						}
+strong a:hover	{
+						color:#696969;
+						text-decoration:underline;
+						}
+em a	{
+						color:#A8C225;
+						text-decoration:none;
+						}
+em a:hover	{
+						color:#A8C225;
+						text-decoration:underline;
+						}	
+i	{
+						color:#ffffff;}	
+i em a	{
+						color:#ffffff;
+						text-decoration:underline;
+						}
+i em a:hover	{
+						color:#ffffff;
+						text-decoration:none;
+						}																																		
+/*----------------------------------------------------   input, textarea	 ---------------------*/						
+input, textarea {
+						width:124px;
+						border:0px;
+						font-family:Tahoma;
+						font-size:11px;
+						color:#777E85;
+						line-height:13px;
+						padding-left:4px;
+						padding-right:3px;
+						}												
+input	{
+						height:18px;
+						background:url(images/bg_input1.gif) left top no-repeat;
+						margin:0px 0px 0px 0px;
+						}
+textarea	{
+						height:60px;
+						margin:0px 0px 1px 0px;
+						overflow:auto;
+						background:none;
+						}
+.input_submit	{
+						height:5px;
+						width:45px;
+						border:0;
+						margin:0px 0px 0px 0px;
+						padding:0px 0px 0px 0px;
+						}							
+/*-----------------------------------------------------  	li	 	---------------------*/
+li	{
+						background-image: url(images/list_1.gif);
+						background-position: 0px 5px;
+						background-repeat: no-repeat;
+						font-size:11px;
+						margin:0px 0px 0px 0px; 
+						padding:0px 0px 0px 16px;
+						line-height:16px;
+						color:#2C2C2C;
+						}
+li a	{
+						color:#2C2C2C;
+						font-size:11px;
+						text-decoration:underline;
+						}
+li a:hover	{
+						color:#2C2C2C;
+						font-size:11px;
+						text-decoration:none;
+						}						
+/*------------------------------------------------------- footer	 ---------------------*/
+.footer td	{
+						
+						color:#ffffff;
+						font-size:11px;
+						padding:30px 0px 0px 200px;
+						}	
+.footer a	{
+						color:#ffffff;
+						font-size:11px;
+						text-decoration:underline;
+						}
+.footer a:hover	{
+						color:#ffffff;
+						font-size:11px;
+						text-decoration:none;
+						}
+/*-----------------------------------------------------       ---------------------*/						
+.m_bg	{
+						background:url(images/m_point.gif) left top repeat-x #669999;
+						text-align:right;
+						}
+.point_bg	{
+						background:url(images/m_point.gif) left top repeat-x #669999;
+						}												
+/*-----------------------------------------------------    end   ---------------------*/													
