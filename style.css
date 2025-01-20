@@ -161,7 +161,7 @@ li a:hover	{
 						}
 
  /* Styles for Mobile Devices */
-@media only screen (min-width:35em) and (max-width: 62.5em) {
+@media only screen and (max-width: 650px) {
 body {
 zoom: 0.7; /* Scales down the page */
 transform: scale(0.7); /* Backup for Firefox */
