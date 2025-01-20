@@ -47,7 +47,7 @@ a	{
 						text-decoration:underline;
 						}
 a:hover	{
-						color:#ffffff;
+						color:#aaadb0;
 						font-size:11px;
 						text-decoration:none;
 						}
@@ -59,7 +59,7 @@ span a	{
 						font-size:10px;
 						}
 span a:hover	{
-						color:#ffffff;
+						color:#aaadb0;
 						text-decoration:none;
 						font-family:Arial;
 						font-size:10px;
@@ -71,7 +71,7 @@ strong a	{
 						text-decoration:none;
 						}
 strong a:hover	{
-						color:#ffffff;
+						color:#aaadb0;
 						text-decoration:underline;
 						}
 em a	{
@@ -79,7 +79,7 @@ em a	{
 						text-decoration:none;
 						}
 em a:hover	{
-						color:#A8C225;
+						color:#aaadb0;
 						text-decoration:underline;
 						}	
 i	{
@@ -89,7 +89,7 @@ i em a	{
 						text-decoration:underline;
 						}
 i em a:hover	{
-						color:#ffffff;
+						color:#aaadb0;
 						text-decoration:none;
 						}																																		
 /*----------------------------------------------------   input, textarea	 ---------------------*/						
@@ -138,7 +138,7 @@ li a	{
 						text-decoration:underline;
 						}
 li a:hover	{
-						color:#2C2C2C;
+						color:#aaadb0;
 						font-size:11px;
 						text-decoration:none;
 						}						
@@ -155,7 +155,7 @@ li a:hover	{
 						text-decoration:underline;
 						}
 .footer a:hover	{
-						color:#ffffff;
+						color:#aaadb0;
 						font-size:11px;
 						text-decoration:none;
 						}
