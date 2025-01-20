@@ -31,7 +31,7 @@ ul {
 						list-style-type:none;
 						margin:0px; 
 						padding:0px; 
-						color:#2C2C2C;
+						color:#ffffff;
 						}	
 em, i {
 						font-style:normal;
@@ -53,7 +53,7 @@ a:hover	{
 						}
 /*-----------------------------------------------------  span a	 ---------------------	*/						 
 span a	{
-						color:#50A2CF;
+						color:#ffffff;
 						text-decoration:underline;
 						font-family:Arial;
 						font-size:10px;
@@ -65,13 +65,13 @@ span a:hover	{
 						font-size:10px;
 						}
 strong {
-						color:#6C6C6C;}
+						color:#ffffff;}
 strong a	{
-						color:#696969;
+						color:#ffffff;
 						text-decoration:none;
 						}
 strong a:hover	{
-						color:#696969;
+						color:#ffffff;
 						text-decoration:underline;
 						}
 em a	{
