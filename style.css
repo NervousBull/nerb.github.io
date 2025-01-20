@@ -169,18 +169,6 @@ transform-origin: top left; /* Ensures scaling starts at the top-left corner */
 
 }
 
-.container {
-width: 75%; /* Adjust the container width */
-padding: 10px;
-}
-
-h1 {
-font-size: 1.5em;
-}
-
-p {
-font-size: 1em;
-}
 
 
 }
