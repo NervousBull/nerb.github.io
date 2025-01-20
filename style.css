@@ -159,6 +159,24 @@ li a:hover	{
 						font-size:11px;
 						text-decoration:none;
 						}
+
+  /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .links a {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+
+            .widget-container {
+                padding: 5px;
+            }
+        }
+
+
 /*-----------------------------------------------------       ---------------------*/						
 .m_bg	{
 						background:url(images/m_point.gif) left top repeat-x #669999;
