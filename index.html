@@ -1,283 +1,459 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	
-	
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTN67W85D3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FTN67W85D3');
-</script>
-	
-	
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nervous Bulls (Nerb)</title>
-
-<!-- SEO Meta Tags -->
-<meta name="keywords" content="nerb.fun, nervousbulls, Hedera Hashgraph, Memejob.fun, Hbar">
-<meta name="description" content="Discover Nervous Bulls (Nerb) and their journey on Hedera Hashgraph. Stay updated on memes, tokens, and more.">
-<meta name="robots" content="index, follow">
-
-<!-- Favicon -->
-<link rel="icon" href="images/favicon1.png" type="image/png">
-
-<!-- Additional Meta Tags (if needed) -->
-<meta name="author" content="Nerb Fun Team">
-
-	
-	</head>
-	
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="style.css" rel="stylesheet" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nervous Bulls (Nerb)</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="nerb.fun, nervousbulls, Hedera Hashgraph, Memejob.fun, Hbar">
+    <meta name="description" content="Discover Nervous Bulls (Nerb) and their journey on Hedera Hashgraph. Stay updated on memes, tokens, and more.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Nerb Fun Team">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTN67W85D3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FTN67W85D3');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #e0e0e0 0%, #9e9e9e 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .ticker-container {
+            background: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .hero {
+            background: url('images/bg_style1600x300.jpg') center/cover no-repeat;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        
+        .hero-logo {
+            display: none;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .card h2 {
+            color: #5a5a5a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #757575;
+            padding-bottom: 10px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .link-item:hover {
+            transform: translateX(10px);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .link-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        
+        .link-item .text h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .link-item .text p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .resource-item {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        
+        .resource-item:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .resource-item strong {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .resource-item p {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .bullet {
+            color: #757575;
+            margin-right: 8px;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+        
+        footer a {
+            color: #9e9e9e;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #757575;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 968px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                background: linear-gradient(135deg, #414141 0%, #2a2a2a 100%);
+                min-height: 400px;
+            }
+            
+            .hero::before {
+                display: none;
+            }
+            
+            .hero-logo {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin: 0 auto 20px;
+                animation: float 3s ease-in-out infinite;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* Feedspot widget styling */
+        #wd-iframe8362261470 {
+            width: 500px !important;
+            max-width: 100%;
+        }
+    </style>
+</head>
 <body>
-<div class="container">	
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
-	<tr>
-	<td width="50%"><img src="images/spacer.gif" width="1" height="1" alt=""></td>
-
-	
-	<td style=" border:0px solid #ffffff; border-top-width:0px;">
-		<table cellpadding="0" cellspacing="0" border="0" width="765" style=" height:100%; class="table-class"">
-			<tr>
-				
-				<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-	<div class="tradingview-widget-container__widget"></div>
-	
-	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-	{
-	"symbols": [
-	  {
-		"proName": "FOREXCOM:SPXUSD",
-		"title": "S&P 500 Index"
-	  },
-	  {
-		"proName": "FOREXCOM:NSXUSD",
-		"title": "US 100 Cash CFD"
-	  },
-	  {
-		"proName": "FX_IDC:EURUSD",
-		"title": "EUR to USD"
-	  },
-	  {
-		"proName": "BITSTAMP:BTCUSD",
-		"title": "Bitcoin"
-	  },
-	  {
-		"proName": "BITSTAMP:ETHUSD",
-		"title": "Ethereum"
-	  },
-	  {
-		"description": "Hedera Hashgraph",
-		"proName": "COINBASE:HBARUSD"
-	  },
-	  {
-		"description": "Gold",
-		"proName": "TVC:GOLD"
-	  },
-	  {
-		"description": "Silver",
-		"proName": "TVC:SILVER"
-	  },
-	  {
-		"description": "Tesla",
-		"proName": "NASDAQ:TSLA"
-	  },
-	  {
-		"description": "MSTR",
-		"proName": "NASDAQ:MSTR"
-	  },
-	  {
-		"description": "XRP",
-		"proName": "COINBASE:XRPUSD"
-	  }
-	],
-	"showSymbolLogo": true,
-	"isTransparent": false,
-	"displayMode": "adaptive",
-	"colorTheme": "light",
-	"locale": "en"
-  }
-	</script>
-  </div>
-  <!-- TradingView Widget END -->
-				
-				
-				
-				<td height="224" style="background:url(images/bg_style5.jpg) no-repeat;">
-				<table cellpadding="0" cellspacing="0" border="0" width="100%">
-				</table>
-			</td></tr>
-			
-<td height="90" style="background:url(images/bg_style7.jpg) no-repeat;">
-				<table cellpadding="0" cellspacing="0" border="0" width="100%">
-				</table>
-			</td></tr>
-			
-			<tr><td height="100%">
-				<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table-class">
-					<tr>
-
-
-
-
-						<td>
-							<table cellpadding="0" cellspacing="0" border="0">
-								<tr><td><img src="images/title_0_1v8.jpg" alt=""></td></tr>
-								<tr><td>
-									<table cellpadding="0" cellspacing="0" border="0" width="100%">
-										<tr>
-											<td><img src="images/spacer.gif" width="32" height="1" alt=""></td>
-											<td width="100%">
-												<table cellpadding="0" cellspacing="0" border="0" width="100%">
-													<tr><td height="107" style="padding:20px 0px 10px 0px;"><img src="images/pic_0_3nerb.jpg" align="left" alt="" style="margin:0px 10px 0px 0px;"><img src="images/spacer.gif" width="1" height="5" alt=""><br>
-
-		<br style="line-height:1px;"><br style="line-height:10px;">
-	<strong><a href="https://memejob.fun/token/0.0.7973854" target="_blank" aria-label="Trade Nerb on memjob.fun" title="Trade Nerb on memjob.fun" style="font-size: 20px;">Trade Nerb</a></td></strong><br>													
-													</td></tr>
-													<tr><td height="78" style="padding:0px 0px 0px 0px;"><img src="images/pic_0_3dex.jpg" align="left" alt="" style="margin:10px 10px 0px 0px;"><img src="images/spacer.gif" width="1" height="5" alt=""><br>
-
-		<br style="line-height:1px;"><br style="line-height:10px;"><br>
-<strong><a href="https://dexscreener.com/hedera" target="_blank" aria-label="Realtime DEX price charts and trading history." title="Realtime DEX price charts and trading history." style="font-size: 20px;">Dexscreener</a></strong>	
-											
-													</td></tr>
-													<tr><td class="point_bg"><img src="images/spacer.gif" width="1" height="1" alt=""></td></tr>
-													<tr><td height="100" style="padding:15px 0px 10px 0px;"><img src="images/pic_0_3Sauce.jpg" align="left" alt="" style="margin:10px 10px 0px 0px;"><img src="images/spacer.gif" width="1" height="5" alt=""><br>
-
-		<br style="line-height:1px;"><br style="line-height:3px;"><br><br>
-<strong><a href="https://www.saucerswap.finance/" target="_blank" aria-label="Leading Crypto Trading Protocol on Hedera." title="Leading Crypto Trading Protocol on Hedera."style="font-size: 20px;">SaucerSwap</a></strong><br>						
-
-
-													</td></tr>
-													<tr><td height="1" style="padding:15px 0px 10px 0px;"><img src="images/pic_0_3Sentx.jpg" align="left" alt="" style="margin:10px 10px 0px 0px;"><img src="images/spacer.gif" width="1" height="5" alt="">
-
-		<br style="line-height:1px;"><br style="line-height:3px;"><br><br>
-		<strong><a href="https://sentx.io/" target="_blank" aria-label="Launchpad, NFT Tools, Market, NFT Manager." title="Launchpad, NFT Tools, Market, NFT Manager." style="font-size: 20px;">SentX</a></strong>
-
-</td></tr>
-													<tr><td height="1" style="padding:15px 0px 10px 0px;"><img src="images/pic_0_3Atlantis.jpg" align="left" alt="" style="margin:10px 10px 0px 0px;"><img src="images/spacer.gif" width="1" height="5" alt="">
-
-		<br style="line-height:1px;"><br style="line-height:3px;"><br><br>
-		<strong><a href="https://altlantis.market/" target="_blank" aria-label="Launchpad, NFT Tools, Market, NFT Manager." title="Launchpad, NFT Tools, Market, NFT Manager." style="font-size: 20px;">Altlantis</a></strong>
-
-															<tr><td height="1" style="padding:15px 0px 10px 0px;"><img src="images/pic_0_4Mati.jpg" align="left" alt="" style="margin:10px 10px 0px 0px;"><img src="images/spacer.gif" width="1" height="5" alt="">
-<br style="line-height:1px;"><br style="line-height:3px;"><br><br>
-		<strong><a href="https://market.kabila.app/collections/9503983/mint" target="_blank" aria-label="Mati NFT Collection." title="Mati NFT Collection." style="font-size: 20px;">Mati NFT</a></strong>
-
-
-														
-													</td></tr>
-														
-													</td></tr>
-												</table>
-											</td>
-											
-											<td><img src="images/spacer.gif" width="15" height="1" alt=""></td>
-										</tr>
-									</table>
-								</td></tr>
-							</table>
-						</td>
-						<td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
-						
-						<td width="100%">
-							<table cellpadding="0" cellspacing="0" border="0" width="100%">
-								<tr><td>
-									<table cellpadding="0" cellspacing="0" border="0" width="100%">
-										<tr>
-											<td><img src="images/banner_0_1v10.jpg" width="260" height="52" alt=""></td>
-											<td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
-											<td><img src="images/banner_0_2v5.jpg" width="260" height="52" alt=""></td>
-										</tr>
-									</table>
-								</tr>
-								<tr><td>
-									<table cellpadding="0" cellspacing="0" border="0" width="100%">
-										<tr>
-											<td><img src="images/spacer.gif" width="33" height="1" alt=""></td>
-											<td><img src="XXXXX" alt="" style="margin:0px 0px 0px 0px;">
-
-											<!-- start widget code --><script type="text/javascript" id="iframecontent" src="https://www.feedspot.com/widgets/Assets/js/wd-iframecontent.js" data-wd-id="17d4ZN6wf133"  data-script="" data-host=""></script><!-- end widget code -->
-											</td>
-											<td><img src="images/spacer.gif" width="66" height="1" alt=""></td><br>
-											<td width="100%"><img src="XXXXXimages/title_0_3.gif" alt="" style="margin:0px 0px 0px 0px;"><br><br>
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://www.hashpack.app/download" target="_blank" aria-label="Powering your web3 adventure. HashPack is your gateway to Hedera dApps, DeFi and NFTs." title="HashPack is your gateway to Hedera dApps, DeFi and NFTs." style="font-size: 17px;">HashPack</a></strong></b><br>
-Download for IOS or Android
-		<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://hashscan.io/mainnet/dashboard" target="_blank" aria-label="HashScan is a ledger explorer for the Hedera network." title="HashScan is a ledger explorer for the Hedera network."style="font-size: 17px;">Hashscan</a></strong></b><br>
-Ledger explorer for the Hedera network  
-
-<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://hbarsuite.app/#/dashboard" target="_blank" aria-label="DAO to utilize innovative Smart-Node technology deployed on top of the Hedera Network." title="DAO to utilize innovative Smart-Node technology deployed on top of the Hedera Network." style="font-size: 17px;">HbarSuite</a></strong></b><br>
-Suite of DeFi services 
-
-<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://app.dragonglass.me/hedera/home" target="_blank" aria-label="Dragon Glass - The First Hedera Explorer." title="Dragon Glass - The First Hedera Explorer." style="font-size: 17px;">Dragon Glass</a></strong></b><br>
-Hedera Hashgraph stats
-
-<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://silkdefi.app/#/exchange" target="_blank" aria-label="DeFi platform: First 0% slippage DEX+Cross-chain DEX on Hedera." title="DeFi platform: First 0% slippage DEX+Cross-chain DEX on Hedera." style="font-size: 17px;">Silkswap</a></strong></b><br>
-Cross Chain Token Swapping 
-
-<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://davincigraph.io/" target="_blank" aria-label="Token and financial management suite on the Hedera." title="Token and financial management suite on the Hedera." style="font-size: 17px;">DaVinciGraph</a></strong></b><br>
-On-chain token management
-
-<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://www.kabila.app/" target="_blank" aria-label="NFT Marketplace built on Hedera." title="NFT Marketplace built on Hedera." style="font-size: 17px;">Kabila App</a></strong></b><br>
-NFT Marketplace
-
-<br style="line-height:1px;"><br style="line-height:14px;">
-<img src="images/list_0_1.gif" alt="" style="margin:0px 0px 0px 0px;"><b><strong><a href="https://coinmarketcap.com/currencies/hedera/" target="_blank" aria-label="Top cryptocurrency prices and charts." title="Top cryptocurrency prices and charts." style="font-size: 17px;">CoinMarketCap</a></strong></b><br>
-Cryptocurrency prices
-<br><br><br><br><br><br><br><br>
-
-
-											</td>
-											<td><img src="images/spacer.gif" width="32" height="1" alt=""></td>
-										</tr>
-
-
-										
-									</table>
-								</td></tr>
-
-
-								
-
-							</table>
-							
-						</td>
-					</tr>
-
-					
-
-				</table>
-				<tr class="footer"><td height="86" bgcolor="#1A1A1A" ><a href="https://nerb.fun/">Nerb.fun</a> ༼ つ ◕_◕ ༽つ 2025&nbsp;  |  &nbsp;<a href="https://x.com/nervousbulls">Follow Nerb on X @NervouBulls</a> &nbsp; | &nbsp;Not Financial Advice&nbsp;
-
-
-			</td></tr>
-			 
-			
-				</tr>
-		</table>
-	</td>
-	<td width="50%"><img src="images/spacer.gif" width="1" height="1" alt=""></td>
-</tr>	
-</table> 
-	  </div>
+    <!-- TradingView Widget -->
+    <div class="ticker-container">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [
+                    {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
+                    {"proName": "FOREXCOM:NSXUSD", "title": "US 100 Cash CFD"},
+                    {"proName": "FX_IDC:EURUSD", "title": "EUR to USD"},
+                    {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
+                    {"proName": "BITSTAMP:ETHUSD", "title": "Ethereum"},
+                    {"description": "Hedera Hashgraph", "proName": "COINBASE:HBARUSD"},
+                    {"description": "Gold", "proName": "TVC:GOLD"},
+                    {"description": "Silver", "proName": "TVC:SILVER"},
+                    {"description": "Tesla", "proName": "NASDAQ:TSLA"},
+                    {"description": "MSTR", "proName": "NASDAQ:MSTR"},
+                    {"description": "XRP", "proName": "COINBASE:XRPUSD"}
+                ],
+                "showSymbolLogo": true,
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "colorTheme": "light",
+                "locale": "en"
+            }
+            </script>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <img src="images/nerb-logo.png" alt="Nervous Bulls Logo" class="hero-logo">
+            <h1>Nervous Bulls (Nerb)</h1>
+            <p style="font-size: 1.1rem; margin-bottom: 10px; font-weight: 600;">Token Id: 0.0.7973854</p>
+            <p style="font-size: 1.2rem;">Journey on Hedera Hashgraph</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="grid">
+            <!-- Left Column - Quick Links -->
+            <div>
+                <div class="card">
+                    <h2>Quick Access</h2>
+                    
+                    <a href="https://memejob.fun/token/0.0.7973854" target="_blank" class="link-item">
+                        <img src="images/pic_0_3nerb.jpg" alt="Trade Nerb">
+                        <div class="text">
+                            <h3>Trade Nerb</h3>
+                            <p>Trade on memejob.fun</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://dexscreener.com/hedera" target="_blank" class="link-item">
+                        <img src="images/pic_0_3dex.jpg" alt="Dexscreener">
+                        <div class="text">
+                            <h3>Dexscreener</h3>
+                            <p>Real-time charts</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.saucerswap.finance/" target="_blank" class="link-item">
+                        <img src="images/pic_0_3Sauce.jpg" alt="SaucerSwap">
+                        <div class="text">
+                            <h3>SaucerSwap</h3>
+                            <p>Crypto trading protocol</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://sentx.io/" target="_blank" class="link-item">
+                        <img src="images/pic_0_3Sentx.jpg" alt="SentX">
+                        <div class="text">
+                            <h3>SentX</h3>
+                            <p>Launchpad & NFT Tools</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://altlantis.market/" target="_blank" class="link-item">
+                        <img src="images/pic_0_3Atlantis.jpg" alt="Altlantis">
+                        <div class="text">
+                            <h3>Altlantis</h3>
+                            <p>NFT Marketplace</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://market.kabila.app/collections/9503983/mint" target="_blank" class="link-item">
+                        <img src="images/pic_0_4Mati.jpg" alt="Mati NFT">
+                        <div class="text">
+                            <h3>Mati NFT</h3>
+                            <p>NFT Collection (Mint on Kabila)</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://sentx.io/nft-marketplace/nerb-x-bngjs" target="_blank" class="link-item">
+                        <img src="images/pic_0_5NerbXBNGJS.jpg" alt="Nerb X BNGJS">
+                        <div class="text">
+                            <h3>Nerb X BNGJS</h3>
+                            <p>NFT Collection on SentX</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Column - Resources -->
+            <div>
+                <div class="card">
+                    <h2>Hedera Links</h2>
+                    
+                    <div class="resources-grid">
+                        <a href="https://www.hashpack.app/download" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>HashPack</strong>
+                            </div>
+                            <p>Hedera Wallet</p>
+                        </a>
+                        
+                        <a href="https://hashscan.io/mainnet/home" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>Hashscan</strong>
+                            </div>
+                            <p>Ledger explorer for Hedera network</p>
+                        </a>
+                        
+                        <a href="https://kiloscribe.com/" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>Kioscribe</strong>
+                            </div>
+                            <p>Inscribe ongraph files</p>
+                        </a>
+                        
+                        <a href="https://app.dragonglass.me/hedera/home" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>Dragon Glass</strong>
+                            </div>
+                            <p>Hedera Hashgraph stats</p>
+                        </a>
+                        
+                        <a href="https://nodes.kiloscribe.com/" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>Nodes</strong>
+                            </div>
+                            <p>Hedera Node stats</p>
+                        </a>
+                        
+                        <a href="https://silkdefi.app/#/exchange" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>SilkSuite</strong>
+                            </div>
+                            <p>Cross chain token swapping</p>
+                        </a>
+                        
+                        <a href="https://davincigraph.io/" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>DaVinciGraph</strong>
+                            </div>
+                            <p>On-chain token management</p>
+                        </a>
+                        
+                        <a href="https://www.kabila.app/" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>Kabila App</strong>
+                            </div>
+                            <p>NFT Hub</p>
+                        </a>
+                        
+                        <a href="https://coinmarketcap.com/currencies/hedera/" target="_blank" class="resource-item">
+                            <div>
+                                <span class="bullet">▸</span><strong>CoinMarketCap</strong>
+                            </div>
+                            <p>Cryptocurrency prices</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- News Widget -->
+                <div class="card" style="margin-top: 30px; height: 525px; overflow: hidden;">
+                    <h2>Latest Updates</h2>
+                    <script type="text/javascript" id="iframecontent" src="https://www.feedspot.com/widgets/Assets/js/wd-iframecontent.js" data-wd-id="998dZA3a463c" data-script="" data-host=""></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="https://nerb.fun/">Nerb.fun</a>
+            <span>༼ つ ◕_◕ ༽つ</span>
+            <span>2025</span>
+            <span>|</span>
+            <a href="https://x.com/nervousbulls">Follow @NervousBulls on X</a>
+            <span>|</span>
+            <span>Not Financial Advice</span>
+        </div>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-
